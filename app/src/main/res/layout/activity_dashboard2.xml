@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A3A3A3"
+    tools:context=".dashboardActivity2"
+    tools:layout_editor_absoluteX="38dp"
+    tools:layout_editor_absoluteY="-143dp">
+
+    <ImageButton
+        android:id="@+id/btnAchievements"
+        android:layout_width="99dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#FFFEFE"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnItems"
+        app:layout_constraintTop_toBottomOf="@+id/categoryTitle"
+        app:srcCompat="@drawable/achievements" />
+
+    <TextView
+        android:id="@+id/txtAchievements"
+        android:layout_width="92dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="128dp"
+        android:text="Goals"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnItems"
+        app:layout_constraintTop_toBottomOf="@+id/categoryTitle" />
+
+    <ImageButton
+        android:id="@+id/btnItems"
+        android:layout_width="99dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#FFFEFE"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toStartOf="@+id/btnAchievements"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnCategory"
+        app:layout_constraintTop_toBottomOf="@+id/categoryTitle"
+        app:srcCompat="@drawable/image4" />
+
+    <TextView
+        android:id="@+id/txtItems"
+        android:layout_width="92dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="124dp"
+        android:text="Items"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/txtAchievements"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtCategory"
+        app:layout_constraintTop_toBottomOf="@+id/categoryTitle" />
+
+    <TextView
+        android:id="@+id/GemQuestTextView"
+        android:layout_width="412dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="21dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="GEMQUEST"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/categoryTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193" />
+
+    <TextView
+        android:id="@+id/categoryTitle"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="96dp"
+        android:background="#F8F4F4"
+        android:text="Dashboard"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnCategory"
+        android:layout_width="99dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#FFFEFE"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toStartOf="@+id/btnItems"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryTitle"
+        app:srcCompat="@drawable/categories" />
+
+    <TextView
+        android:id="@+id/txtCategory"
+        android:layout_width="92dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="124dp"
+        android:text="Categories"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/txtItems"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryTitle" />
+
+    <ImageButton
+        android:id="@+id/btnVideo"
+        android:layout_width="99dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toStartOf="@+id/btnHistory"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCategory"
+        app:srcCompat="@drawable/videos" />
+
+    <ImageButton
+        android:id="@+id/btnHistory"
+        android:layout_width="99dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnVideo"
+        app:layout_constraintTop_toBottomOf="@+id/btnAchievements"
+        app:srcCompat="@drawable/image14" />
+
+    <ImageButton
+        android:id="@+id/photoGalleryimgBtn"
+        android:layout_width="99dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVideo"
+        app:srcCompat="@drawable/galleryicon" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="155dp"
+        android:text="Video Gallery"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCategory" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="84dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="151dp"
+        android:text="Collection History"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/txtAchievements" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="156dp"
+        android:text="Picture Gallary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/txtAchievementStatus"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
